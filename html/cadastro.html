@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <button id="instructions-btn">Instruções</button>
+    <div id="instructions-menu" class="instructions-menu">
+        <h2>Instruções</h2>
+        <p>Por favor, siga as instruções abaixo para preencher o formulário de cadastro:</p>
+    <ul>
+        <li> Preencha o formulário corretamente;</li>
+        <li> Todos os campos são obrigatórios;</li>
+        <li> Certifique-se de usar uma senha forte;</li>
+        <li> A confirmação da senha deve ser igual à senha;</li>
+        <li> Atente-se para a utilização de um email válido;</li>
+    </ul>
+
+ <button id="close-btn">Fechar</button>
+    </div>
+
+
+    <div class="container">
+        <section class="header">
+            <h1>Adicione suas informações no formulário abaixo:</h1>
+        </section>
+
+    <form id="form" class="form">
+
+        <div class="form_content">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+         <span class="error-message" id="name-error">Insira seu nome.</span>
+              <span class="mensagem-obrigatoria" id="name-obrigatorio">Resposta obrigatória</span>
+        </div>
+
+        <div class="form_content">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+         <span class="error-message" id="email-error">Insira um email válido.</span>
+              <span class="mensagem-obrigatoria" id="email-obrigatorio">Resposta obrigatória</span>
+
+        </div>
+
+        <div class="form_content">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+         <span class="error-message" id="age-error">Insira sua idade.</span>
+              <span class="mensagem-obrigatoria" id="age-obrigatorio">Resposta obrigatória</span>
+        </div>
+        
+        <div class="form_content">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+             <span class="error-message" id="password-error">Insira sua senha.</span>
+              <span class="mensagem-obrigatoria" id="password-obrigatorio">Resposta obrigatória</span>
+        </div>
+
+        <div class="form_content">
+            <label for="confirm_password">Confirme a Senha:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+             <span class="error-message" id="confirm-password-error">Insira a confirmação da senha.</span>
+              <span class="mensagem-obrigatoria" id="confirm-password-obrigatorio">Resposta obrigatória</span>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/instrucoes.js"></script>
+</html>
